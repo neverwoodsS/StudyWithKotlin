@@ -76,8 +76,6 @@ class Chain {
             print("${temp.content} -> ")
             temp = temp.next
         }
-        println()
+        println("\n")
     }
-
-    data class Node(var content: String, var next: Node? = null)
 }

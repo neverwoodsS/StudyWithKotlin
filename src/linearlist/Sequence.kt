@@ -39,6 +39,6 @@ class Sequence {
 
     fun log() {
         (0 until array.size).map { array[it] }.forEach { print(it + ", ") }
-        println()
+        println("\n")
     }
 }
