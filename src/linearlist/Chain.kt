@@ -70,7 +70,90 @@ class Chain {
         }
     }
 
+    fun deleteNode(node: Node) {
+        if (node.next == null) {
+            println("delete after loop")
+            var temp: Node = head
+            while (temp.next != node) {
+                if (temp.next == head) {
+                    println("i don't have this element")
+                    return
+                }
+                temp = temp.next!!
+            }
+
+            temp.next = node.next
+
+        } else {
+            println("delete directly")
+            node.content = node.next!!.content
+            node.next = node.next!!.next
+        }
+    }
+
+    fun reserve() {
+        var temp: Node? = head.next
+        head.next = null
+
+        while (temp != null) {
+            val next = temp.next
+            temp.next = null
+            addElementToFirst(temp)
+
+            temp = next
+        }
+    }
+
+    fun getAtLastIndex(index: Int): Node? {
+        var count = 0
+        var temp: Node? = head.next
+        var result: Node? = head.next
+
+        while (temp != null) {
+            if (count > index) {
+                result = result!!.next
+            }
+            temp = temp.next
+            count++
+        }
+
+        return result
+    }
+
+    fun getMiddleNode(): Node? {
+        var temp: Node? = head.next
+        var result: Node? = head.next
+
+        while (temp != null && temp.next != null) {
+            result = result?.next
+            temp = temp.next?.next
+        }
+
+        return result
+    }
+
+    fun hasLoop(): Boolean {
+        var temp: Node? = head.next
+        var result: Node? = head.next
+
+        while (temp != null && temp.next != null) {
+            result = result?.next
+            temp = temp.next?.next
+
+            if (temp === result) {
+                return true
+            }
+        }
+
+        return false;
+    }
+
     fun log() {
+        if (hasLoop()) {
+            println("can't log when it's a loop and did'nt come back to head")
+            return
+        }
+
         var temp: Node? = head
         while (temp != null) {
             print("${temp.content} -> ")
