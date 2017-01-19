@@ -132,6 +132,14 @@ class Chain {
         return result
     }
 
+    fun getLastNode(): Node? {
+        var temp: Node? = head
+        while (temp != null && temp.next != null) {
+            temp = temp.next
+        }
+        return temp
+    }
+
     fun hasLoop(): Boolean {
         var temp: Node? = head.next
         var result: Node? = head.next
@@ -148,9 +156,60 @@ class Chain {
         return false;
     }
 
+    fun hasCrossTo(chain: Chain): Boolean {
+        return getLastNode() === chain.getLastNode()
+    }
+
+    fun getLength(): Int {
+        var count = 0
+        var temp: Node? = head
+
+        while (temp != null) {
+            temp = temp.next
+            count++
+        }
+
+        return count
+    }
+
+    fun getFirstCrossNodeTo(chain: Chain): Node? {
+        if (hasCrossTo(chain)) {
+            val distance = getLength() - chain.getLength()
+
+            var temp1: Node? = head
+            var temp2: Node? = chain.head
+
+            if (distance > 0) {
+                for (count in 0 until distance) {
+                    temp1 = temp1!!.next
+                }
+            }
+
+            if (distance < 0) {
+                for (count in distance until 0) {
+                    temp2 = temp2!!.next
+                }
+            }
+
+            while (temp1!!.next != null && temp2!!.next != null) {
+                if (temp1 === temp2) {
+                    return temp1
+                }
+
+                temp1 = temp1.next
+                temp2 = temp2.next
+            }
+
+            return null
+
+        } else {
+            return null
+        }
+    }
+
     fun log() {
         if (hasLoop()) {
-            println("can't log when it's a loop and did'nt come back to head")
+            println("can't log when it's a loop and did'nt come back to head\n")
             return
         }
 

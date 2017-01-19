@@ -42,12 +42,39 @@ fun main(args: Array<String>) {
     // 获取中间节点
     println("get middle node")
     val middleNode = chain.getMiddleNode()
-    println("${middleNode?.content}")
+    println("${middleNode?.content}\n")
 
     // 判断是否有循环
-    node5.next = node6
+    println("judge loop: ")
+    node5.content = "5"
+    node6.next = node5
     chain.addElementToLast(node5)
     chain.reserve()
     chain.addElementToLast(node6)
     chain.log()
+
+    // 拆掉循环
+    println("delete loop: ")
+    node6.next = null
+    chain.deleteNode(node6)
+    chain.log()
+    chain.deleteNode(node5)
+    chain.log()
+    println("node5.content = ${node5.content}")
+    println("PS.由此可见 delete directly 虽然降低了时间复杂度，但会在一定程度上造成混乱\n")
+
+    // 判断两个链表是否相交
+    println("judge cross\n")
+    val chain2 = Chain()
+    val crossNode = Node("cross")
+    chain.addElementToIndex(crossNode, 2)
+    chain2.addElementToIndex(crossNode, 3)
+
+    println("chain:")
+    chain.log()
+    println("chain2: ")
+    chain2.log()
+    println("crossed = ${chain.hasCrossTo(chain2)}")
+
+    println("first cross node = ${chain.getFirstCrossNodeTo(chain2)?.content}")
 }
