@@ -118,4 +118,12 @@ fun main(args: Array<String>) {
     println("add at index: 6")
     loopChain.addToIndex(Node("3"), 6)
     loopChain.log()
+
+    println("end loop chain\n")
+
+
+    println("start double chain")
+    val doubleChain = DoubleChain()
+    println("init: ")
+    doubleChain.log()
 }
