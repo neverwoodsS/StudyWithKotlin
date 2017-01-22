@@ -33,6 +33,24 @@ class DoubleChain {
         prior.last = element
     }
 
+    fun removeFirstElement() {
+        if (head.next == prior) {
+            throw Exception("no element contains")
+        } else {
+            head.next!!.next!!.last = head
+            head.next = head.next!!.next
+        }
+    }
+
+    fun removeLastElement() {
+        if (prior.last == head) {
+            throw Exception("no element contains")
+        } else {
+            prior.last!!.last!!.next = prior
+            prior.last = prior.last!!.last
+        }
+    }
+
     fun log() {
         var temp: DoubleNode? = head
         while (temp != null) {

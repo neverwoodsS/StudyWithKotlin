@@ -122,8 +122,18 @@ fun main(args: Array<String>) {
     println("end loop chain\n")
 
 
+    // 双链表
+
     println("start double chain")
     val doubleChain = DoubleChain()
     println("init: ")
+    doubleChain.log()
+
+    println("remove first: ")
+    doubleChain.removeFirstElement()
+    doubleChain.log()
+
+    println("remove last: ")
+    doubleChain.removeLastElement()
     doubleChain.log()
 }

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4945fcfb-be5c-48a2-997b-403ed1f896e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linearlist/DoubleChain.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linearlist/DoubleNode.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/linearlist/DoubleChain.kt" afterPath="$PROJECT_DIR$/src/linearlist/DoubleChain.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/linearlist/Study.kt" afterPath="$PROJECT_DIR$/src/linearlist/Study.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleChain.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoubleChain.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/linearlist/DoubleChain.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="555">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Study.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Study.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linearlist/Study.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="114">
+              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/linearlist/Example.kt" />
         <option value="$PROJECT_DIR$/src/linearlist/Chain.kt" />
         <option value="$PROJECT_DIR$/src/linearlist/DoubleNode.kt" />
-        <option value="$PROJECT_DIR$/src/linearlist/Study.kt" />
         <option value="$PROJECT_DIR$/src/linearlist/DoubleChain.kt" />
+        <option value="$PROJECT_DIR$/src/linearlist/Study.kt" />
       </list>
     </option>
   </component>
@@ -472,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484797529757</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="双向链表初始化及首尾添加">
+      <created>1484994222572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1484994222572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -550,7 +556,8 @@
     <MESSAGE value="单向循环链表" />
     <MESSAGE value="部分习题解" />
     <MESSAGE value="判断链表相交，及第一个相交节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="判断链表相交，及第一个相交节点" />
+    <MESSAGE value="双向链表初始化及首尾添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="双向链表初始化及首尾添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -917,18 +924,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linearlist/Study.kt">
+    <entry file="file://$PROJECT_DIR$/src/linearlist/DoubleChain.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="555">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linearlist/DoubleChain.kt">
+    <entry file="file://$PROJECT_DIR$/src/linearlist/Study.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="114">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
