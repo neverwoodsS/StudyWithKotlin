@@ -136,4 +136,8 @@ fun main(args: Array<String>) {
     println("remove last: ")
     doubleChain.removeLastElement()
     doubleChain.log()
+
+    println("reverse: ")
+    doubleChain.reverse()
+    doubleChain.log()
 }

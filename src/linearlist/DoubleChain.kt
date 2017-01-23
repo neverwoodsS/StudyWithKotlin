@@ -51,6 +51,23 @@ class DoubleChain {
         }
     }
 
+    fun reverse() {
+        if (head.next == prior) {
+            throw Exception("no element contains")
+        }
+
+        var temp = head.next
+
+        head.next = prior
+        prior.last = head
+
+        while (temp != prior) {
+            val next = temp!!.next
+            addElementToFirst(temp)
+            temp = next
+        }
+    }
+
     fun log() {
         var temp: DoubleNode? = head
         while (temp != null) {
