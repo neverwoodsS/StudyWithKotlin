@@ -68,6 +68,18 @@ class DoubleChain {
         }
     }
 
+    fun removeElement(element: DoubleNode) {
+        if (element === head || element === prior) {
+            throw Exception("can't remove head or prior")
+        }
+
+        element.last!!.next = element.next
+        element.next!!.last = element.last
+
+        element.last = null
+        element.next = null
+    }
+
     fun log() {
         var temp: DoubleNode? = head
         while (temp != null) {

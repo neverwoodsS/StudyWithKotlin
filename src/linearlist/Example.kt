@@ -77,4 +77,25 @@ fun main(args: Array<String>) {
     println("crossed = ${chain.hasCrossTo(chain2)}")
 
     println("first cross node = ${chain.getFirstCrossNodeTo(chain2)?.content}")
+
+
+    // 双向链表
+
+    println("\ndouble chain example: ")
+    println("init: ")
+    val doubleChain = DoubleChain()
+    doubleChain.log()
+
+    println("double chain reserve: ")
+    doubleChain.reverse()
+    doubleChain.log()
+
+    val test = DoubleNode("test")
+    println("add test: ")
+    doubleChain.addElementToFirst(test)
+    doubleChain.log()
+
+    println("remove test: ")
+    doubleChain.removeElement(test)
+    doubleChain.log()
 }
