@@ -416,4 +416,33 @@ object StationData {
             "临港大道",
             "滴水湖"
     )
+
+    private val lines = mutableListOf(
+            line1,
+            line2,
+            line3,
+            line4,
+            line5,
+            line6,
+            line7,
+            line8,
+            line9,
+            line10,
+            line11,
+            line12,
+            line13,
+            line16
+    )
+
+    val trainLines = mutableListOf<TrainLine>()
+
+    init {
+        for (line in lines) {
+            val trainLine = TrainLine()
+            for (station in line) {
+                trainLine.putStation(station)
+            }
+            trainLines.add(trainLine)
+        }
+    }
 }
