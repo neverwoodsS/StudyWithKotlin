@@ -10,17 +10,17 @@ fun main(args: Array<String>) {
     val accept = 8
 
     val stations = mutableListOf(
-            "南浦大桥",
-            "蓝村路",
-            "西藏北路",
-            "昌平路",
-            "张江高科",
-            "天潼路"
+             "南浦大桥"
+            ,"蓝村路"
+            ,"西藏北路"
+            ,"昌平路"
+            ,"张江高科"
+            ,"天潼路"
     ).map { StationPool.getStation(it) }
 
 
     // 针对每个 target 计算符合条件的站点并收集为集合
-    val lists = stations.map { target -> StationPool.pool.map { it.value }.filter { it.farFrom(target) < accept }.toList() }
+    val lists = stations.map { target -> StationPool.pool.map { it.value }.filter { it.farFrom(target) <= accept }.toList() }
 
     // 筛选对所有 target 都符合条件的站点
     var list = lists[0]
@@ -42,10 +42,9 @@ fun main(args: Array<String>) {
 
 fun <E> List<E>.retain(list: List<E>): List<E> {
     val result = mutableListOf<E>()
-    for (e in this) {
-        if (list.contains(e)) {
-            result.add(e)
-        }
+
+    filter { list.contains(it) }.forEach {
+        result.add(it)
     }
 
     return result
