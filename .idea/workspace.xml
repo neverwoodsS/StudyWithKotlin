@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4945fcfb-be5c-48a2-997b-403ed1f896e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Study/META-INF/Study.kotlin_module" afterPath="$PROJECT_DIR$/out/production/Study/META-INF/Study.kotlin_module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/Main.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/Main.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/Station.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/Station.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/StationData.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/StationData.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/StationPool.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/StationPool.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,18 +36,18 @@
       <file leaf-file-name="TrainLine.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="691">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Station.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Station.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="601">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="421">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -80,7 +76,7 @@
       <file leaf-file-name="StationData.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationData.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="544">
               <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
               <folding />
             </state>
@@ -143,10 +139,10 @@
         <option value="$PROJECT_DIR$/src/subway/solution1/LinePool.kt" />
         <option value="$PROJECT_DIR$/src/subway/solution1/Line.kt" />
         <option value="$PROJECT_DIR$/src/subway/solution1/StationPool.kt" />
-        <option value="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" />
         <option value="$PROJECT_DIR$/src/subway/solution1/StationData.kt" />
-        <option value="$PROJECT_DIR$/src/subway/solution1/Station.kt" />
         <option value="$PROJECT_DIR$/src/subway/solution1/Main.kt" />
+        <option value="$PROJECT_DIR$/src/subway/solution1/Station.kt" />
+        <option value="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" />
       </list>
     </option>
   </component>
@@ -680,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486544035241</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="subway solution1 完成，已能使用">
+      <created>1486610746414</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1486610746414</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -768,7 +771,8 @@
     <MESSAGE value="基于链表实现的队列" />
     <MESSAGE value="地铁站数据录入" />
     <MESSAGE value="地铁站数据解析加工完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="地铁站数据解析加工完成" />
+    <MESSAGE value="subway solution1 完成，已能使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="subway solution1 完成，已能使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,38 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationPool.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/queue/Study.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1138,10 +1110,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationPool.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/subway/solution1/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="421">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>

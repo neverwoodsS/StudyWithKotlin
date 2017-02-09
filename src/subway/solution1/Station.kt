@@ -34,8 +34,6 @@ class Station(val name: String) {
                 if (!tempLines.contains(throughLine)) {
                     for (changeStation in throughLine.changeStations) {
                         if (changeStation != this) {
-//                            lines.add(throughLine)
-
                             val newLines = mutableSetOf<TrainLine>()
                             tempLines.forEach { newLines.add(it) }
                             newLines.add(throughLine)

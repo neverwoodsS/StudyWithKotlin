@@ -49,16 +49,4 @@ class TrainLine(val name: String) {
 
         return Math.abs(index1 - index2)
     }
-
-    fun log() {
-        println("stations: ")
-        stations.forEach { print("${it.name}, ") }
-        println()
-
-        println("changeStations: ")
-        changeStations.forEach { print("${it.name}, ") }
-        println()
-        println()
-        println()
-    }
 }
