@@ -418,28 +418,28 @@ object StationData {
     )
 
     private val lines = mutableListOf(
-            line1,
-            line2,
-            line3,
-            line4,
-            line5,
-            line6,
-            line7,
-            line8,
-            line9,
-            line10,
-            line11,
-            line12,
-            line13,
-            line16
+            "line1" to line1,
+            "line2" to line2,
+            "line3" to line3,
+            "line4" to line4,
+            "line5" to line5,
+            "line6" to line6,
+            "line7" to line7,
+            "line8" to line8,
+            "line9" to line9,
+            "line10" to line10,
+            "line11" to line11,
+            "line12" to line12,
+            "line13" to line13,
+            "line16" to line16
     )
 
     val trainLines = mutableListOf<TrainLine>()
 
     init {
         for (line in lines) {
-            val trainLine = TrainLine()
-            for (station in line) {
+            val trainLine = TrainLine(line.first)
+            for (station in line.second) {
                 trainLine.putStation(station)
             }
             trainLines.add(trainLine)
