@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4945fcfb-be5c-48a2-997b-403ed1f896e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/Station.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/Station.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" afterPath="$PROJECT_DIR$/src/subway/solution1/TrainLine.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,21 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainLine.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainLine.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="585">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Station.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Station.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="496">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,8 +65,8 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/subway/solution1/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="556">
+              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -683,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486610746414</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="代码优化">
+      <created>1486610905070</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1486610905070</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -772,7 +778,8 @@
     <MESSAGE value="地铁站数据录入" />
     <MESSAGE value="地铁站数据解析加工完成" />
     <MESSAGE value="subway solution1 完成，已能使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="subway solution1 完成，已能使用" />
+    <MESSAGE value="代码优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,18 +1117,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationData.kt">
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
+        <state relative-caret-position="556">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="496">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/StationData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1134,18 +1149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Main.kt">
+    <entry file="file://$PROJECT_DIR$/src/subway/solution1/TrainLine.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/subway/solution1/Station.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="585">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding />
         </state>
       </provider>

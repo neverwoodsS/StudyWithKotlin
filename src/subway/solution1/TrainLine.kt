@@ -7,10 +7,6 @@ class TrainLine(val name: String) {
     val stations = linkedSetOf<Station>()
     val changeStations = linkedSetOf<Station>()
 
-    fun putStation(station: Station) {
-        stations.add(station)
-    }
-
     fun putStation(stationName: String) {
         val station = StationPool.getStation(stationName)
         // station 与 trainLine 互相添加引用
