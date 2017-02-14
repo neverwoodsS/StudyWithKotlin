@@ -45,4 +45,24 @@ class TrainLine(val name: String) {
 
         return Math.abs(index1 - index2)
     }
+
+    fun getPathBetween(station1: Station, station2: Station): MutableList<Pair<Station, TrainLine>> {
+        val result = mutableListOf<Pair<Station, TrainLine>>()
+        val index1 = stations.indexOf(station1)
+        val index2 = stations.indexOf(station2)
+
+        if (index1 > index2) {
+            (index1 downTo index2).forEach {
+                result.add(stations.elementAt(it) to this)
+            }
+        } else if (index1 < index2) {
+            (index1 .. index2).forEach {
+                result.add(stations.elementAt(it) to this)
+            }
+        } else {
+            stations.elementAt(index1)
+        }
+
+        return result
+    }
 }

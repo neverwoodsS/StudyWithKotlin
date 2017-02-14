@@ -7,5 +7,15 @@ fun main(args: Array<String>) {
     // 这句只是为了初始化一下数据
     StationData.trainLines.forEach {  }
 
-    println("distance = ${ StationPool.getStation("黄兴公园").farFrom(StationPool.getStation("虹桥火车站")) }")
+    val path = StationPool.getStation("临平路").pathTo(StationPool.getStation("昌平路"))
+    path?.forEach {
+        println()
+        it?.forEach {
+            print("${ it.first.name }(${it.second.name}) -> ")
+        }
+
+        println()
+        println()
+        println("或")
+    }
 }
