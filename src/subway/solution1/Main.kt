@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     // 这句只是为了初始化一下数据
     StationData.trainLines.forEach {  }
 
-    val accept = 8
+    val accept = 9
 
     val stations = mutableListOf(
              "南浦大桥"
@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
             ,"西藏北路"
             ,"昌平路"
             ,"张江高科"
-            ,"天潼路"
+//            ,"天潼路"
     ).map { StationPool.getStation(it) }
 
 
