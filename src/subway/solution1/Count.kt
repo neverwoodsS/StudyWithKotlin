@@ -13,9 +13,11 @@ fun main(args: Array<String>) {
         it?.forEach {
             print("${ it.first.name }(${it.second.name}) -> ")
         }
+        println("到达")
 
-        println()
         println()
         println("或")
     }
+    println()
+    println("没了")
 }
