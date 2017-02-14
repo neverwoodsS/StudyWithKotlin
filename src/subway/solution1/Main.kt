@@ -20,7 +20,12 @@ fun main(args: Array<String>) {
 
 
     // 针对每个 target 计算符合条件的站点并收集为集合
-    val lists = stations.map { target -> StationPool.pool.map { it.value }.filter { it.farFrom(target) <= accept }.toList() }
+    val lists = stations.map { target ->
+        StationPool.pool
+                .map { it.value }
+                .filter { it.farFrom(target) <= accept }
+                .toList()
+    }
 
     // 筛选对所有 target 都符合条件的站点
     var list = lists[0]
